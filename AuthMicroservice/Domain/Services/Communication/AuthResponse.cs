@@ -1,6 +1,4 @@
 using AuthMicroservice.Resources;
-using AuthMicroservice.Domain.Services.Communication;
-
 namespace AuthMicroservice.Domain.Services.Communication;
 
 public class AuthResponse : BaseResponse<AuthResource> {
