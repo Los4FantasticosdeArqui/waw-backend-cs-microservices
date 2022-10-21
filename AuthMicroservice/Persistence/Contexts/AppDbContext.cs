@@ -8,44 +8,17 @@ using AuthMicroservice.Extensions;
 namespace AuthMicroservice.Persistence.Contexts;
 
 public class AppDbContext : DbContext {
-  private DbSet<Offer>? offers;
+ 
   private DbSet<User>? users;
-  private DbSet<Company>? companies;
-  private DbSet<ChatRoom>? chatRooms;
-  private DbSet<Message>? messages;
-  private DbSet<ExternalImage>? images;
   private DbSet<UserEducation>? userEducation;
   private DbSet<UserExperience>? userExperience;
   private DbSet<UserProject>? userProject;
 
-  public DbSet<Offer> Offers {
-    get => GetContext(offers);
-    set => offers = value;
-  }
+  
 
   public DbSet<User> Users {
     get => GetContext(users);
     set => users = value;
-  }
-
-  public DbSet<Company> Companies {
-    get => GetContext(companies);
-    set => companies = value;
-  }
-
-  public DbSet<ChatRoom> ChatRooms {
-    get => GetContext(chatRooms);
-    set => chatRooms = value;
-  }
-
-  public DbSet<Message> Messages {
-    get => GetContext(messages);
-    set => messages = value;
-  }
-
-  public DbSet<ExternalImage> Images {
-    get => GetContext(images);
-    set => images = value;
   }
 
   public DbSet<UserEducation> UserEducation {
@@ -67,32 +40,7 @@ public class AppDbContext : DbContext {
 
   protected override void OnModelCreating(ModelBuilder builder) {
     base.OnModelCreating(builder);
-
-    var chatRoomEntity = builder.Entity<ChatRoom>();
-    chatRoomEntity.ToTable("ChatRoom");
-    chatRoomEntity.HasKey(p => p.Id);
-    chatRoomEntity.Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
-    chatRoomEntity.Property(p => p.CreationDate).IsRequired();
-    chatRoomEntity.Property(p => p.LastUpdateDate).IsRequired();
-    chatRoomEntity.HasMany(p => p.Messages).WithOne(p => p.ChatRoom).HasForeignKey(p => p.ChatRoomId);
-    chatRoomEntity.HasMany(p => p.Messages).WithOne(p => p.ChatRoom).HasForeignKey(p => p.ChatRoomId);
-
-    var messageEntity = builder.Entity<Message>();
-    messageEntity.ToTable("Message");
-    messageEntity.HasKey(p => p.Id);
-    messageEntity.Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
-    messageEntity.Property(p => p.Content).IsRequired().HasMaxLength(512);
-    messageEntity.Property(p => p.Date).IsRequired();
-
-    var offerEntity = builder.Entity<Offer>();
-    offerEntity.ToTable("Offers");
-    offerEntity.HasKey(p => p.Id);
-    offerEntity.Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
-    offerEntity.Property(p => p.Title).IsRequired().HasMaxLength(256);
-    offerEntity.Property(p => p.Image).HasMaxLength(2048);
-    offerEntity.Property(p => p.Description).IsRequired();
-    offerEntity.Property(p => p.Status).IsRequired();
-
+    
     var userEntity = builder.Entity<User>();
     userEntity.ToTable("Users");
     userEntity.HasKey(p => p.Id);
@@ -103,7 +51,7 @@ public class AppDbContext : DbContext {
     userEntity.Property(p => p.ProfileViews).HasDefaultValue(0);
     userEntity.Property(p => p.Birthdate).IsRequired();
     userEntity.Property(p => p.Password).IsRequired().HasMaxLength(60);
-    userEntity.HasMany(p => p.ChatRooms).WithMany(p => p.Participants);
+    //userEntity.HasMany(p => p.ChatRooms).WithMany(p => p.Participants);
     userEntity.HasMany(p => p.Education).WithOne(p => p.User).HasForeignKey(p => p.UserId).IsRequired();
     userEntity.HasMany(p => p.Experience).WithOne(p => p.User).HasForeignKey(p => p.UserId).IsRequired();
     userEntity.HasMany(p => p.Projects).WithOne(p => p.User).HasForeignKey(p => p.UserId).IsRequired();
@@ -131,7 +79,7 @@ public class AppDbContext : DbContext {
     experienceEntity.Property(p => p.TimeDiff).IsRequired().HasMaxLength(100);
     experienceEntity.Property(p => p.Description).IsRequired().HasMaxLength(5000);
     experienceEntity.HasOne(p => p.Image).WithOne().HasForeignKey<UserExperience>(p => p.ImageId);
-    experienceEntity.HasOne(p => p.Company).WithOne().HasForeignKey<UserExperience>(p => p.CompanyId);
+    // experienceEntity.HasOne(p => p.Company).WithOne().HasForeignKey<UserExperience>(p => p.CompanyId);
 
     var projectsEntity = builder.Entity<UserProject>();
     projectsEntity.ToTable("UserProject");
@@ -148,14 +96,6 @@ public class AppDbContext : DbContext {
     imageEntity.Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
     imageEntity.Property(p => p.Href).IsRequired().HasMaxLength(2000);
     imageEntity.Property(p => p.Alt).HasMaxLength(100);
-
-    var companyEntity = builder.Entity<Company>();
-    companyEntity.ToTable("Companies");
-    companyEntity.HasKey(p => p.Id);
-    companyEntity.Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
-    companyEntity.Property(p => p.Name).IsRequired().HasMaxLength(100);
-    companyEntity.Property(p => p.Address).HasMaxLength(256);
-    companyEntity.Property(p => p.Email).IsRequired().HasMaxLength(256);
 
     builder.UseSnakeCase();
   }
