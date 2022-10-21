@@ -5,16 +5,21 @@
     <projectFile profileName="waw_chat_service">waw-chat-service/waw-chat-service.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc4c76bf-77e4-4260-b77f-9dc63d3800f3" name="Changes" comment="feat: add relationship with message">
-      <change afterPath="$PROJECT_DIR$/waw-chat-service/Domain/Repositories/IChatRoomRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/waw-chat-service/Domain/Repositories/IMessageRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/waw-chat-service/Domain/Repositories/IUnitOfWork.cs" afterDir="false" />
+    <list default="true" id="bc4c76bf-77e4-4260-b77f-9dc63d3800f3" name="Changes" comment="feat: implemented domain repositories">
+      <change afterPath="$PROJECT_DIR$/waw-chat-service/Domain/Services/Communication/BaseResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/waw-chat-service/Domain/Services/Communication/ChatRoomResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/waw-chat-service/Domain/Services/Communication/ErrorResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/waw-chat-service/Domain/Services/Communication/MessageResponse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.waw-chat-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.waw-chat-service/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/waw-chat-service/waw-chat-service.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/waw-chat-service/waw-chat-service.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/chama/Desktop/Trabajos 2022-2/WAW - Fundamentos de Arquitectura de Software/waw-backend-cs-microservices/waw-chat-service/waw-chat-service/Domain/Models/ChatRoom.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -75,7 +80,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666327714474</updated>
-      <workItem from="1666327720723" duration="2239000" />
+      <workItem from="1666327720723" duration="2549000" />
     </task>
     <task id="LOCAL-00001" summary="feat: delete unneeded files">
       <created>1666328013341</created>
@@ -119,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666329976927</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat: implemented domain repositories">
+      <created>1666330010993</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1666330010993</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +158,7 @@
     <MESSAGE value="feat: implement domain model" />
     <MESSAGE value="feat: implemented chatroom and message domain models" />
     <MESSAGE value="feat: add relationship with message" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add relationship with message" />
+    <MESSAGE value="feat: implemented domain repositories" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: implemented domain repositories" />
   </component>
 </project>
