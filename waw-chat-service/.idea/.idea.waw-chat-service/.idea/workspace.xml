@@ -5,12 +5,8 @@
     <projectFile profileName="waw_chat_service">waw-chat-service/waw-chat-service.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc4c76bf-77e4-4260-b77f-9dc63d3800f3" name="Changes" comment="feat: implemented domain repositories">
-      <change afterPath="$PROJECT_DIR$/waw-chat-service/Domain/Services/Communication/BaseResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/waw-chat-service/Domain/Services/Communication/ChatRoomResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/waw-chat-service/Domain/Services/Communication/ErrorResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/waw-chat-service/Domain/Services/Communication/MessageResponse.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.waw-chat-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.waw-chat-service/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="bc4c76bf-77e4-4260-b77f-9dc63d3800f3" name="Changes" comment="feat(chat): implemented interface services">
+      <change afterPath="$PROJECT_DIR$/waw-chat-service/Utils/RoutePrefixConvention.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/waw-chat-service/waw-chat-service.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/waw-chat-service/waw-chat-service.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +76,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666327714474</updated>
-      <workItem from="1666327720723" duration="2549000" />
+      <workItem from="1666327720723" duration="2902000" />
     </task>
     <task id="LOCAL-00001" summary="feat: delete unneeded files">
       <created>1666328013341</created>
@@ -131,7 +127,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666330010993</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat(chat): implemented domain services communication">
+      <created>1666330343433</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1666330343433</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat(chat): implemented interface services">
+      <created>1666330479498</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1666330479498</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +169,8 @@
     <MESSAGE value="feat: implemented chatroom and message domain models" />
     <MESSAGE value="feat: add relationship with message" />
     <MESSAGE value="feat: implemented domain repositories" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: implemented domain repositories" />
+    <MESSAGE value="feat(chat): implemented domain services communication" />
+    <MESSAGE value="feat(chat): implemented interface services" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(chat): implemented interface services" />
   </component>
 </project>
