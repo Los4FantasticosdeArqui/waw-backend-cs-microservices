@@ -22,4 +22,18 @@
         <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.4.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Controllers" />
+      <Folder Include="Domain\Repositories" />
+      <Folder Include="Domain\Services" />
+      <Folder Include="Extensions" />
+      <Folder Include="Injection" />
+      <Folder Include="Mapping" />
+      <Folder Include="Persistence\Context" />
+      <Folder Include="Persistence\Repositories" />
+      <Folder Include="Resources" />
+      <Folder Include="Services" />
+      <Folder Include="Utils" />
+    </ItemGroup>
+
 </Project>
