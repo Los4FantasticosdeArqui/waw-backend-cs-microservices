@@ -5,11 +5,10 @@
     <projectFile profileName="waw_chat_service">waw-chat-service/waw-chat-service.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc4c76bf-77e4-4260-b77f-9dc63d3800f3" name="Changes" comment="feat(chat): implement appdbcontext">
-      <change afterPath="$PROJECT_DIR$/waw-chat-service/Resources/ChatRoomRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/waw-chat-service/Resources/ChatRoomResource.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/waw-chat-service/Resources/MessageRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/waw-chat-service/Resources/MessageResource.cs" afterDir="false" />
+    <list default="true" id="bc4c76bf-77e4-4260-b77f-9dc63d3800f3" name="Changes" comment="feat(chat): implement mapping">
+      <change afterPath="$PROJECT_DIR$/waw-chat-service/Controllers/ChatRoomController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/waw-chat-service/Controllers/MessageController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.waw-chat-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.waw-chat-service/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/waw-chat-service/waw-chat-service.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/waw-chat-service/waw-chat-service.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +78,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666327714474</updated>
-      <workItem from="1666327720723" duration="4903000" />
+      <workItem from="1666327720723" duration="5506000" />
     </task>
     <task id="LOCAL-00001" summary="feat: delete unneeded files">
       <created>1666328013341</created>
@@ -186,7 +185,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666332387588</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="feat(chat): implement chat resources">
+      <created>1666332738065</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1666332738065</updated>
+    </task>
+    <task id="LOCAL-00017" summary="feat(chat): implement mapping">
+      <created>1666332982261</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1666332982261</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +235,8 @@
     <MESSAGE value="feat(chat): implement injections" />
     <MESSAGE value="feat(chat): implement repositories" />
     <MESSAGE value="feat(chat): implement appdbcontext" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(chat): implement appdbcontext" />
+    <MESSAGE value="feat(chat): implement chat resources" />
+    <MESSAGE value="feat(chat): implement mapping" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(chat): implement mapping" />
   </component>
 </project>
