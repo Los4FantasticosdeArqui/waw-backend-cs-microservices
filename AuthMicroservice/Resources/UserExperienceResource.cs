@@ -11,5 +11,5 @@ public class UserExperienceResource {
   public string TimeDiff { get; set; } = string.Empty;
   public string Description { get; set; } = string.Empty;
   public ExternalImageResource? Image { get; set; }
-  public CompanyResource? Company { get; set; }
+  // public CompanyResource? Company { get; set; }
 }
