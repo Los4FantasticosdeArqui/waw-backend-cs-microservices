@@ -1,6 +1,4 @@
 using WAW.API.Employers.Domain.Models;
-using WAW.API.Shared.Domain.Model;
-
 namespace AuthMicroservice.Domain.Models;
 
 public class UserExperience : BaseModel {
