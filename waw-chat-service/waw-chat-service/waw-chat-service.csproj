@@ -24,10 +24,7 @@
 
     <ItemGroup>
       <Folder Include="Controllers" />
-      <Folder Include="Injection" />
       <Folder Include="Mapping" />
-      <Folder Include="Persistence\Context" />
-      <Folder Include="Persistence\Repositories" />
       <Folder Include="Resources" />
     </ItemGroup>
 
