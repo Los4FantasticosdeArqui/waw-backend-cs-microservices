@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  db:
+  job-service-db:
     image: mysql:8.0.31
     ports:
       - "3307:3306"
@@ -11,13 +11,13 @@ services:
       MYSQL_DATABASE: waw-jobs
   
   job-service:
-    image: docker-waw-job-service:1.0.0
+    image: waw-job-service:1.0.0
     build:
       context: waw-job-service/waw-job-service
       dockerfile: Dockerfile
     ports:
       - "8080:8080"
     environment:
-      - DbConnectionString=Server=db;Port=3306;Database=waw-jobs;Uid=root;Pwd=admin
+      - DbConnectionString=Server=job-service-db;Port=3306;Database=waw-jobs;Uid=root;Pwd=admin
     depends_on:
-      - db
+      - job-service-db

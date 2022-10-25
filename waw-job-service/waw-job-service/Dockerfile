@@ -1,6 +1,13 @@
-﻿FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
-COPY bin/Release/net6.0/publish/ app/
+﻿FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+WORKDIR /src
+COPY waw-job-service.csproj .
+RUN dotnet restore
+COPY . .
+RUN dotnet publish -c release -o /app
+
+FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
 WORKDIR /app
+COPY --from=build /app .
 
 EXPOSE 8080
 
