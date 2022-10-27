@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace waw_employer_service.Domain.Services.Communication
+﻿namespace waw_employer_service.Domain.Services.Communication
 {
     public class ErrorResponse
     {

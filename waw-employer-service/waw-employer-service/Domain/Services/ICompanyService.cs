@@ -1,4 +1,5 @@
-﻿using Models;
+﻿using waw_employer_service.Domain.Model;
+using waw_employer_service.Services.Communication;
 
 namespace waw_employer_service.Domain.Services.Communication
 {

@@ -1,4 +1,4 @@
-﻿using Domain.Models;
+﻿using waw_employer_service.Domain.Model;
 using Microsoft.EntityFrameworkCore;
 using waw_employer_service.Domain.Repositories;
 using waw_employer_service.Persistence.Contexts;

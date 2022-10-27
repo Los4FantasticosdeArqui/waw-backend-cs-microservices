@@ -1,7 +1,7 @@
-﻿namespace waw_employer_service.Domain.Repositories
-{
-    using Models;
+﻿using waw_employer_service.Domain.Model;
 
+namespace waw_employer_service.Domain.Repositories
+{
     public interface ICompanyRepository
     {
         Task<IEnumerable<Company>> ListAll();
