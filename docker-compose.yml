@@ -1,0 +1,44 @@
+version: '3.8'
+
+#networks:
+  #backend:
+
+services:
+  job-service-db:
+    image: mysql:8.0.31
+    ports:
+      - "3307:3306"
+    #networks:
+      #- backend
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_PASSWORD: admin
+      MYSQL_DATABASE: waw-jobs
+  
+  job-service:
+    image: waw-job-service
+    build:
+      context: waw-job-service/waw-job-service
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    #networks:
+      #- backend
+    environment:
+      - DbConnectionString=Server=job-service-db;Port=3306;Database=waw-jobs;Uid=root;Pwd=admin
+    depends_on:
+      - job-service-db
+  
+  api-gateway:
+    image: waw-api-gateway
+    build:
+      context: api-gateway/api-gateway
+      dockerfile: Dockerfile
+    ports:
+      - "8081:80"
+    #networks:
+      #- backend
+    links:
+      - job-service
+    depends_on:
+      - job-service
