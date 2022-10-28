@@ -1,4 +1,4 @@
-using WAW.API.Employers.Domain.Models;
+// using WAW.API.Employers.Domain.Models;
 namespace AuthMicroservice.Domain.Models;
 
 public class UserExperience : BaseModel {
@@ -14,7 +14,7 @@ public class UserExperience : BaseModel {
   public ExternalImage? Image { get; set; }
 
   public long? CompanyId { get; set; }
-  public Company? Company { get; set; }
+  // public Company? Company { get; set; }
 
   public long? UserId { get; set; }
   public User? User { get; set; }

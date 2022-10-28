@@ -1,5 +1,5 @@
 using System.Text.Json.Serialization;
-//using waw-chat-service.Domain.Models;
+// using waw-chat-service.Domain.Models;
  
 
 namespace AuthMicroservice.Domain.Models;
@@ -29,5 +29,5 @@ public class User : BaseModel {
 
   public IList<UserProject> Projects { get; set; } = new List<UserProject>();
 
-  public IList<ChatRoom> ChatRooms { get; set; } = new List<ChatRoom>();
+  // public IList<ChatRoom> ChatRooms { get; set; } = new List<ChatRoom>();
 }
