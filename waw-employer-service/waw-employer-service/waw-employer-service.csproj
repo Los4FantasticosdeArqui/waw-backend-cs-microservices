@@ -5,6 +5,7 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <RootNamespace>waw_employer_service</RootNamespace>
+        <UserSecretsId>0254c63b-b1ce-4942-bc8b-ab40834f81cd</UserSecretsId>
     </PropertyGroup>
 
     <ItemGroup>

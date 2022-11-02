@@ -1,6 +1,6 @@
 ﻿namespace waw_employer_service.Domain.Repositories
 {
-    public class IUnitOfWork
+    public interface IUnitOfWork
     {
         Task Complete();
     }

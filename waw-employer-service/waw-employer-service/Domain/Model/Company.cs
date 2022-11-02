@@ -6,4 +6,4 @@ namespace waw_employer_service.Domain.Model
       public string Email { get; set; } = string.Empty;
     }
 }
-
+    

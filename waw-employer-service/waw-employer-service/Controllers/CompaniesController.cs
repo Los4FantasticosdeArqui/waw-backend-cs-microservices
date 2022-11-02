@@ -5,7 +5,7 @@ using Swashbuckle.AspNetCore.Annotations;
 using waw_employer_service.Resources;
 using waw_employer_service.Extensions;
 using waw_employer_service.Domain.Model;
-using waw_employer_service.Domain.Services;
+using waw_employer_service.Domain.Services.Communication;
 
 namespace waw_employer_service.Controllers
 {

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Serilog;
 using waw_employer_service.Extensions;
-using waw_employer_service.Injection;
+using waw_employer_service.Injections;
 using waw_employer_service.Mapping;
 using waw_employer_service.Persistence.Contexts;
 
