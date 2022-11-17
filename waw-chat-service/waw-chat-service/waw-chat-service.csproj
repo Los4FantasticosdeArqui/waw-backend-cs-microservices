@@ -6,6 +6,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <RootNamespace>waw_chat_service</RootNamespace>
       <UserSecretsId>0fea3777-4574-4111-b9dd-5ddda9fd6bf7</UserSecretsId>
+      <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
 
     <ItemGroup>

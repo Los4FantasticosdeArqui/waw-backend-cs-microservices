@@ -5,12 +5,10 @@
     <projectFile profileName="waw_chat_service">waw-chat-service/waw-chat-service.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc4c76bf-77e4-4260-b77f-9dc63d3800f3" name="Changes" comment="">
+    <list default="true" id="bc4c76bf-77e4-4260-b77f-9dc63d3800f3" name="Changes" comment="feat(chat): delete unneeded files">
+      <change afterPath="$PROJECT_DIR$/waw-chat-service/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/waw-chat-service/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.waw-chat-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.waw-chat-service/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/waw-chat-service/Persistence/Context/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/waw-chat-service/Persistence/Context/AppDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/waw-chat-service/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/waw-chat-service/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/waw-chat-service/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/waw-chat-service/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/waw-chat-service/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/waw-chat-service/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/waw-chat-service/waw-chat-service.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/waw-chat-service/waw-chat-service.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,6 +86,7 @@
       <workItem from="1667354796994" duration="554000" />
       <workItem from="1667355577828" duration="33000" />
       <workItem from="1667357438447" duration="564000" />
+      <workItem from="1668645232011" duration="623000" />
     </task>
     <task id="LOCAL-00001" summary="feat: delete unneeded files">
       <created>1666328013341</created>
@@ -215,7 +214,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666333398445</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="feat(chat): add migrations and fix bug with database">
+      <created>1668645273864</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1668645273864</updated>
+    </task>
+    <task id="LOCAL-00020" summary="feat(chat): delete unneeded files">
+      <created>1668645530384</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1668645530384</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,6 +267,8 @@
     <MESSAGE value="feat(chat): implement chat resources" />
     <MESSAGE value="feat(chat): implement mapping" />
     <MESSAGE value="feat(chat): implement controllers" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(chat): implement controllers" />
+    <MESSAGE value="feat(chat): add migrations and fix bug with database" />
+    <MESSAGE value="feat(chat): delete unneeded files" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(chat): delete unneeded files" />
   </component>
 </project>
