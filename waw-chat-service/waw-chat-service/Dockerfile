@@ -1,6 +1,6 @@
 ﻿FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY waw-job-service.csproj .
+COPY waw-chat-service.csproj .
 RUN dotnet restore
 COPY . .
 RUN dotnet publish -c release -o /app
