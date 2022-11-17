@@ -5,14 +5,13 @@
     <projectFile profileName="waw_chat_service">waw-chat-service/waw-chat-service.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc4c76bf-77e4-4260-b77f-9dc63d3800f3" name="Changes" comment="" />
+    <list default="true" id="bc4c76bf-77e4-4260-b77f-9dc63d3800f3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock://C:/Users/chama/Desktop/Trabajos 2022-2/WAW - Fundamentos de Arquitectura de Software/waw-backend-cs-microservices/waw-chat-service/waw-chat-service/Domain/Models/ChatRoom.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -23,16 +22,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.waw-chat-service: IIS Express">
     <configuration name="waw-chat-service: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/waw-chat-service/waw-chat-service.csproj" />
@@ -74,6 +73,18 @@
       <option name="presentableId" value="Default" />
       <updated>1666327714474</updated>
       <workItem from="1666327720723" duration="5746000" />
+      <workItem from="1666991714646" duration="3000" />
+      <workItem from="1666991788708" duration="2330000" />
+      <workItem from="1666994278497" duration="2724000" />
+      <workItem from="1666997044653" duration="873000" />
+      <workItem from="1667349691240" duration="473000" />
+      <workItem from="1667351726059" duration="349000" />
+      <workItem from="1667354274908" duration="434000" />
+      <workItem from="1667354796994" duration="554000" />
+      <workItem from="1667355577828" duration="33000" />
+      <workItem from="1667357438447" duration="564000" />
+      <workItem from="1668645232011" duration="1417000" />
+      <workItem from="1668647168391" duration="601000" />
     </task>
     <task id="LOCAL-00001" summary="feat: delete unneeded files">
       <created>1666328013341</created>
@@ -201,7 +212,35 @@
       <option name="project" value="LOCAL" />
       <updated>1666333398445</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="feat(chat): add migrations and fix bug with database">
+      <created>1668645273864</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1668645273864</updated>
+    </task>
+    <task id="LOCAL-00020" summary="feat(chat): delete unneeded files">
+      <created>1668645530384</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1668645530384</updated>
+    </task>
+    <task id="LOCAL-00021" summary="feat(chat): implemented Dockerfile">
+      <created>1668646250880</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1668646250880</updated>
+    </task>
+    <task id="LOCAL-00022" summary="feat(chat): update branch">
+      <created>1668646479504</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1668646479504</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,6 +279,10 @@
     <MESSAGE value="feat(chat): implement chat resources" />
     <MESSAGE value="feat(chat): implement mapping" />
     <MESSAGE value="feat(chat): implement controllers" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(chat): implement controllers" />
+    <MESSAGE value="feat(chat): add migrations and fix bug with database" />
+    <MESSAGE value="feat(chat): delete unneeded files" />
+    <MESSAGE value="feat(chat): implemented Dockerfile" />
+    <MESSAGE value="feat(chat): update branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(chat): update branch" />
   </component>
 </project>

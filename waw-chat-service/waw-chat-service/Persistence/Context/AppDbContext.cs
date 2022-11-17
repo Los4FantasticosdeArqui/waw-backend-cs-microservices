@@ -38,6 +38,8 @@ public class AppDbContext : DbContext {
         messageEntity.Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
         messageEntity.Property(p => p.Content).IsRequired().HasMaxLength(512);
         messageEntity.Property(p => p.Date).IsRequired();
+        
+        builder.UseSnakeCase();
     }
     
     private static T GetContext<T>(T? ctx) {

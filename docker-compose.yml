@@ -60,11 +60,35 @@ services:
       context: waw-auth-service/waw-auth-service
       dockerfile: Dockerfile
     ports:
-      - "8080:8080"
+      - "8082:8080"
       #networks:
       #- backend
     environment:
       - DbConnectionString=Server=auth-service-db;Port=3306;Database=waw-auth;Uid=root;Pwd=admin
     depends_on:
       - auth-service-db
+      
+  chat-service-db:
+    image: mysql:8.0.31
+    ports:
+      - "3309:3306"
+    #networks:
+      #- backend
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_PASSWORD: admin
+      MYSQL_DATABASE: waw-chat
   
+  chat-service:
+    image: waw-chat-service
+    build:
+        context: waw-chat-service/waw-chat-service
+        dockerfile: Dockerfile
+    ports:
+      - "8083:8080"
+      #networks:
+      #- backend
+    environment:
+      - DbConnectionString=Server=chat-service-db;Port=3306;Database=waw-chat;Uid=root;Pwd=admin
+    depends_on:
+      - chat-service-db
