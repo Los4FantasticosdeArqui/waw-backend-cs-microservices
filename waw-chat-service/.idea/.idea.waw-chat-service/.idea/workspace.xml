@@ -5,14 +5,18 @@
     <projectFile profileName="waw_chat_service">waw-chat-service/waw-chat-service.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc4c76bf-77e4-4260-b77f-9dc63d3800f3" name="Changes" comment="" />
+    <list default="true" id="bc4c76bf-77e4-4260-b77f-9dc63d3800f3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.waw-chat-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.waw-chat-service/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waw-chat-service/Persistence/Context/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/waw-chat-service/Persistence/Context/AppDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waw-chat-service/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/waw-chat-service/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waw-chat-service/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/waw-chat-service/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waw-chat-service/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/waw-chat-service/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waw-chat-service/waw-chat-service.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/waw-chat-service/waw-chat-service.csproj" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock://C:/Users/chama/Desktop/Trabajos 2022-2/WAW - Fundamentos de Arquitectura de Software/waw-backend-cs-microservices/waw-chat-service/waw-chat-service/Domain/Models/ChatRoom.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -23,16 +27,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.waw-chat-service: IIS Express">
     <configuration name="waw-chat-service: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/waw-chat-service/waw-chat-service.csproj" />
@@ -74,6 +78,16 @@
       <option name="presentableId" value="Default" />
       <updated>1666327714474</updated>
       <workItem from="1666327720723" duration="5746000" />
+      <workItem from="1666991714646" duration="3000" />
+      <workItem from="1666991788708" duration="2330000" />
+      <workItem from="1666994278497" duration="2724000" />
+      <workItem from="1666997044653" duration="873000" />
+      <workItem from="1667349691240" duration="473000" />
+      <workItem from="1667351726059" duration="349000" />
+      <workItem from="1667354274908" duration="434000" />
+      <workItem from="1667354796994" duration="554000" />
+      <workItem from="1667355577828" duration="33000" />
+      <workItem from="1667357438447" duration="564000" />
     </task>
     <task id="LOCAL-00001" summary="feat: delete unneeded files">
       <created>1666328013341</created>
