@@ -4,8 +4,9 @@
         <TargetFramework>net6.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
-        <RootNamespace>waw_job_service</RootNamespace>
-      <UserSecretsId>82ce2133-1f75-4396-87d1-34817f3ee358</UserSecretsId>
+        <RootNamespace>waw_chat_service</RootNamespace>
+      <UserSecretsId>0fea3777-4574-4111-b9dd-5ddda9fd6bf7</UserSecretsId>
+      <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
 
     <ItemGroup>
@@ -22,13 +23,6 @@
         <PackageReference Include="Serilog.AspNetCore" Version="6.1.0-dev-00285" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
         <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.4.0" />
-        <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.24.0" />
-        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.10" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Migrations" />
-      <Folder Include="Persistence" />
     </ItemGroup>
 
 </Project>
