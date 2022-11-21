@@ -92,3 +92,28 @@ services:
       - DbConnectionString=Server=chat-service-db;Port=3306;Database=waw-chat;Uid=root;Pwd=admin
     depends_on:
       - chat-service-db
+
+  employer-service-db:
+    image: mysql:8.0.31
+    ports:
+      - "3310:3306"
+      #networks:
+      #- backend
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_PASSWORD: admin
+      MYSQL_DATABASE: waw-employer
+
+  employer-service:
+    image: waw-employer-service
+    build:
+      context: waw-employer-service/waw-employer-service
+      dockerfile: Dockerfile
+    ports:
+      - "8084:8080"
+      #networks:
+      #- backend
+    environment:
+      - DbConnectionString=Server=employer-service-db;Port=3306;Database=waw-employer;Uid=root;Pwd=admin
+    depends_on:
+      - employer-service-db
