@@ -32,11 +32,11 @@ services:
     links:
       - job-service
       - auth-service
-        #- chat-service
+      - chat-service
     depends_on:
       - job-service
       - auth-service
-        #- chat-service
+      - chat-service
     
   auth-service-db:
     image: mysql:8.0.31
