@@ -1,15 +1,10 @@
 version: '3.8'
 
-#networks:
-  #backend:
-
 services:
   job-service-db:
     image: mysql:8.0.31
     ports:
       - "3307:3306"
-      #networks:
-      #- backend
     environment:
       MYSQL_ROOT_PASSWORD: admin
       MYSQL_PASSWORD: admin
@@ -22,8 +17,6 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8080:8080"
-      #networks:
-      #- backend
     environment:
       - DbConnectionString=Server=job-service-db;Port=3306;Database=waw-jobs;Uid=root;Pwd=admin
     depends_on:
@@ -36,19 +29,19 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8081:80"
-      #networks:
-      #- backend
     links:
       - job-service
+      - auth-service
+        #- chat-service
     depends_on:
       - job-service
+      - auth-service
+        #- chat-service
     
   auth-service-db:
     image: mysql:8.0.31
     ports:
       - "3308:3306"
-    #networks:
-      #- backend
     environment:
       MYSQL_ROOT_PASSWORD: admin
       MYSQL_PASSWORD: admin
@@ -61,8 +54,6 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8082:8080"
-      #networks:
-      #- backend
     environment:
       - DbConnectionString=Server=auth-service-db;Port=3306;Database=waw-auth;Uid=root;Pwd=admin
     depends_on:
@@ -72,8 +63,6 @@ services:
     image: mysql:8.0.31
     ports:
       - "3309:3306"
-    #networks:
-      #- backend
     environment:
       MYSQL_ROOT_PASSWORD: admin
       MYSQL_PASSWORD: admin
@@ -86,8 +75,6 @@ services:
         dockerfile: Dockerfile
     ports:
       - "8083:8080"
-      #networks:
-      #- backend
     environment:
       - DbConnectionString=Server=chat-service-db;Port=3306;Database=waw-chat;Uid=root;Pwd=admin
     depends_on:

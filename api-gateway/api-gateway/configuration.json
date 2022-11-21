@@ -1,7 +1,7 @@
 ﻿{
   "Routes": [
     {
-      "DownstreamPathTemplate": "/api/v1/{everything}",
+      "DownstreamPathTemplate": "/api/v1/offers",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -9,8 +9,92 @@
           "Port": 8080
         }
       ],
-      "UpstreamPathTemplate": "/api/v1/{everything}",
-      "UpstreamHttpMethod": [ "POST", "PUT", "GET", "DELETE" ]
+      "UpstreamPathTemplate": "/api/v1/offers",
+      "UpstreamHttpMethod": [ "POST", "GET" ] 
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/offers/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "job-service",
+          "Port": 8080
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/offers/{everything}",
+      "UpstreamHttpMethod": [ "PUT", "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/users",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "auth-service",
+          "Port": 8082
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/users",
+      "UpstreamHttpMethod": [ "POST", "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/users/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "auth-service",
+          "Port": 8082
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/users/{everything}",
+      "UpstreamHttpMethod": [ "POST", "PUT", "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/chatroom",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "chat-service",
+          "Port": 8083
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/chatroom",
+      "UpstreamHttpMethod": [ "POST", "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/chatroom/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "chat-service",
+          "Port": 8083
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/chatroom/{everything}",
+      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/message",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "chat-service",
+          "Port": 8083
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/message",
+      "UpstreamHttpMethod": [ "POST", "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/message/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "chat-service",
+          "Port": 8083
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/message/{everything}",
+      "UpstreamHttpMethod": [ "DELETE" ]
     }
   ],
   "GlobalConfiguration": {
