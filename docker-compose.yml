@@ -33,10 +33,12 @@ services:
       - job-service
       - auth-service
       - chat-service
+      - employer-service
     depends_on:
       - job-service
       - auth-service
       - chat-service
+      - employer-service
 
   auth-service-db:
     image: mysql:8.0.31
@@ -84,8 +86,6 @@ services:
     image: mysql:8.0.31
     ports:
       - "3310:3306"
-      #networks:
-      #- backend
     environment:
       MYSQL_ROOT_PASSWORD: admin
       MYSQL_PASSWORD: admin
@@ -98,8 +98,6 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8084:8080"
-      #networks:
-      #- backend
     environment:
       - DbConnectionString=Server=employer-service-db;Port=3306;Database=waw-employer;Uid=root;Pwd=admin
     depends_on:
