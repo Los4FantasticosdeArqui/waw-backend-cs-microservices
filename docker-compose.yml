@@ -33,11 +33,13 @@ services:
       - job-service
       - auth-service
       - chat-service
+      - employer-service
     depends_on:
       - job-service
       - auth-service
       - chat-service
-    
+      - employer-service
+
   auth-service-db:
     image: mysql:8.0.31
     ports:
@@ -46,7 +48,7 @@ services:
       MYSQL_ROOT_PASSWORD: admin
       MYSQL_PASSWORD: admin
       MYSQL_DATABASE: waw-auth
-      
+
   auth-service:
     image: waw-auth-service
     build:
@@ -58,7 +60,7 @@ services:
       - DbConnectionString=Server=auth-service-db;Port=3306;Database=waw-auth;Uid=root;Pwd=admin
     depends_on:
       - auth-service-db
-      
+
   chat-service-db:
     image: mysql:8.0.31
     ports:
@@ -67,15 +69,36 @@ services:
       MYSQL_ROOT_PASSWORD: admin
       MYSQL_PASSWORD: admin
       MYSQL_DATABASE: waw-chat
-  
+
   chat-service:
     image: waw-chat-service
     build:
-        context: waw-chat-service/waw-chat-service
-        dockerfile: Dockerfile
+      context: waw-chat-service/waw-chat-service
+      dockerfile: Dockerfile
     ports:
       - "8083:8080"
     environment:
       - DbConnectionString=Server=chat-service-db;Port=3306;Database=waw-chat;Uid=root;Pwd=admin
     depends_on:
       - chat-service-db
+
+  employer-service-db:
+    image: mysql:8.0.31
+    ports:
+      - "3310:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_PASSWORD: admin
+      MYSQL_DATABASE: waw-employer
+
+  employer-service:
+    image: waw-employer-service
+    build:
+      context: waw-employer-service/waw-employer-service
+      dockerfile: Dockerfile
+    ports:
+      - "8084:8080"
+    environment:
+      - DbConnectionString=Server=employer-service-db;Port=3306;Database=waw-employer;Uid=root;Pwd=admin
+    depends_on:
+      - employer-service-db

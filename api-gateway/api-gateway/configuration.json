@@ -95,6 +95,30 @@
       ],
       "UpstreamPathTemplate": "/api/v1/message/{everything}",
       "UpstreamHttpMethod": [ "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/companies",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "employer-service",
+          "Port": 8084
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/companies",
+      "UpstreamHttpMethod": [ "POST", "GET" ] 
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/companies/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "employer-service",
+          "Port": 8084
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/companies/{everything}",
+      "UpstreamHttpMethod": [ "PUT", "DELETE" ]
     }
   ],
   "GlobalConfiguration": {
